@@ -7,4 +7,4 @@ The Musical Instruments Store aims to create a dynamic and user-friendly website
 # Authors:
 1 - Aigerim Baibakty <br />
 2 - Magzhan Kulekesh <br />
-3 - Kuatuly Abukhanifa
+3 - Abukhanifa Kuatuly
