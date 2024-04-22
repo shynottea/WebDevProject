@@ -21,12 +21,14 @@
     margin-left: 65px;
     top: 33%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
  }
 
 
 .logo {
     width: 70px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .logo2 {
