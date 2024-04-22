@@ -15,8 +15,6 @@
     align-items: center;
     justify-content: space-between;
     background-color:bisque;
-    position: fixed;
-
 }
 
  h2 {
@@ -153,6 +151,10 @@ button {
     cursor: pointer;
     position: relative;
     overflow: hidden;
+}
+
+button:hover{
+    background-color: rgb(78, 78, 78);
 }
 
 span {
