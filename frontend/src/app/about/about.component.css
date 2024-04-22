@@ -14,7 +14,7 @@
   width: 100%;
   display: block;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 200px;
 }
 .content-section{
   float: left;
@@ -22,7 +22,8 @@
 }
 .image-section{
   float: right;
-  width: 42%;
+  width: 44%;
+  margin-right: -30px;
 }
 .image-section img{
   width: 100%;
@@ -36,13 +37,13 @@
   font-family: sans-serif;
 }
 .content-section .content h2{
-  margin-top: 20px;
+  margin-top: 50px;
   color: #5d5d5d;
   font-size: 24px;
   font-family: sans-serif;
 }
 .content-section .content  p{
-  margin-top: 10px;
+  margin-top: 30px;
   font-family: sans-serif;
   font-size: 18px;
   line-height: 1.5;
@@ -52,7 +53,7 @@
 }
 .content-section .content .button a{
   font-family: sans-serif;
-  background-color: #9e2a40;
+  background-color: #000000;
   padding: 12px;
   text-decoration: none;
   color: #fff;
@@ -60,6 +61,6 @@
   letter-spacing: 1.5px;
 }
 .content-section .content .button a:hover{
-  background-color: #702d3a;
+  background-color: #5c5c5c;
   transition: 0.5s;
 }
