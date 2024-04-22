@@ -1,0 +1,19 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    margin-top: 70px;/* Align items to the top */
+}
+
+.left-info {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.right-info {
+    flex: 1;
+    padding: 0 20px;
+    text-align: right;
+}
+
+

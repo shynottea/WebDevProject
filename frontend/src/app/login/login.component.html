@@ -1,9 +1,10 @@
-
+<app-header2></app-header2>
 <div class="parent"> 
     <div class="container" [ngClass]="isSignDivVisible ? 'active' :'' " id="container">
-        <div class="form-container sign-up" >
+        <div class="form-container sign-up">
             <form>
                 <h1>Create Account</h1>
+
                 <input type="text" name="name" [(ngModel)]="signUpObj.name" placeholder="Name">
                 <input type="email" name="email" [(ngModel)]="signUpObj.email" placeholder="Email">
                 <input type="password" name="password"  [(ngModel)]="signUpObj.password" placeholder="Password">
@@ -41,3 +42,4 @@
         </div>
     </div>
 </div>
+<app-footer></app-footer>
