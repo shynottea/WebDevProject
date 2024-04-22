@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+}
 .bg-color{
     background-color: #eee;
     padding: 60px 0;
-    font-family: 'Roboto', 'sans-serif';
 }
 .containers{
     width: 50%;
@@ -22,7 +24,6 @@
     text-transform: uppercase;
     margin: 0;
     font-size: 50px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 .title{
@@ -66,7 +67,7 @@
 .title h1{
     font-size:44px;
     color:#131313;
-    font-weight: 900;
+    font-weight: 500;
     text-transform: uppercase;
 }
 .title h1 span{

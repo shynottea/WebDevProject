@@ -21,7 +21,8 @@
             </li>
             <li>
                 <a routerLink="/login"><img src="https://cdn-icons-png.flaticon.com/512/552/552848.png" class="logo2"></a>
-                <a routerLink="/login"> Login</a>
+                <a class="nav-link" (click)="openLoginForm()" data-toggle="modal"
+                data-target="#staticBackdrop">Login</a>
             </li>
             
         </ul>
