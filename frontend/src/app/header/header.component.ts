@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { Router } from 'express';
 import { LoginComponent } from '../login/login.component';
@@ -24,6 +24,13 @@ import { ContactsComponent } from '../contacts/contacts.component';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+  constructor() { }
 
+  ngOnInit(): void {
+  }
+
+  openLoginForm(): void {}
+
+  openSignUpForm(): void {}
 }

@@ -1,19 +1,66 @@
-.about {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; 
-    margin-top: 70px;/* Align items to the top */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
-
-.left-info {
-    flex: 1;
-    padding: 0 20px;
+.section{
+  width: 100%;
+  min-height: 76.9vh;
 }
-
-.right-info {
-    flex: 1;
-    padding: 0 20px;
-    text-align: right;
+.container{
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding-top: 200px;
 }
-
-
+.content-section{
+  float: left;
+  width: 55%;
+}
+.image-section{
+  float: right;
+  width: 44%;
+  margin-right: -30px;
+}
+.image-section img{
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.4);
+}
+.content-section .title{
+  font-size: 28px;
+  color: #b96713;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+.content-section .content h2{
+  margin-top: 50px;
+  color: #5d5d5d;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+.content-section .content  p{
+  margin-top: 30px;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.content-section .content .button{
+  margin-top: 30px;
+}
+.content-section .content .button a{
+  font-family: sans-serif;
+  background-color: #000000;
+  padding: 12px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 21px;
+  letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+  background-color: #5c5c5c;
+  transition: 0.5s;
+}
