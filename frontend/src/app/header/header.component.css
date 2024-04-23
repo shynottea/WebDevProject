@@ -119,8 +119,7 @@
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
-    padding: 0px;
-    margin: 0;
+    margin-top:-32px;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/yes.jpg');
     background-repeat: no-repeat;
     background-size: cover;
