@@ -6,7 +6,7 @@ import { Header2Component } from '../header2/header2.component';
 import { FooterComponent } from '../footer/footer.component';
 import { Category } from '../models';
 import { BackendService } from '../backend.service';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { SearchPipe } from '../search.pipe';
 
 
 @Component({
@@ -16,7 +16,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     RouterModule, 
     RouterOutlet, 
     RouterLink,
-    Ng2SearchPipeModule,
+    SearchPipe
   ],
   templateUrl: './categories.component.html',
   styleUrl: './categories.component.css'
