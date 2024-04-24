@@ -1,0 +1,51 @@
+from django.db import models
+
+class Category(models.Model):
+    name = models.CharField(max_length=250)
+    description = models.TextField(max_length=1000)
+    
+    def __str__(self):
+        return f"ID: {self.id}, Name: {self.name}, Description: {self.description}"
+    
+    
+    class Meta:
+        verbose_name = "Category"
+        verbose_name_plural = 'Categories'
+        
+        
+    def to_json(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'description': self.description
+        }
+    
+    
+class Product(models.Model):
+    name = models.CharField(max_length=250)
+    description = models.TextField(max_length=1000)
+    rating = models.CharField(max_length=50)
+    image_url = models.CharField(max_length=1500)
+    categoryId = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="vacancies")
+    price = models.FloatField()
+    
+    
+    
+    def __str__(self):
+        return f"ID: {self.id}, Name: {self.name}, Description: {self.description}, rating: {self.rating}, CategoryId: {self.categoryId}"
+    
+    
+    class Meta:
+        verbose_name = 'Product'
+        verbose_name_plural = 'Products'
+        
+        
+    def to_json(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'description': self.description,
+            'rating': self.rating,
+            'price': self.price
+            
+        }
