@@ -4,11 +4,12 @@ import { HeaderComponent } from './header/header.component';
 import { HighlightsComponent } from './highlights/highlights.component';
 import { HttpClientModule } from '@angular/common/http';
 import { routes } from './app.routes';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, HighlightsComponent, HttpClientModule, RouterModule],
+  imports: [RouterOutlet, HeaderComponent, HighlightsComponent, HttpClientModule, RouterModule, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
