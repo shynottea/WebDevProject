@@ -6,8 +6,13 @@ import { Header2Component } from '../header2/header2.component';
 import { FooterComponent } from '../footer/footer.component';
 import { Category } from '../models';
 import { BackendService } from '../backend.service';
+<<<<<<< HEAD
 import { Ng2SearchPipe, Ng2SearchPipeModule } from 'ng2-search-filter';
+import { SearchPipe } from '../search.pipe';
 
+=======
+import { SearchPipe } from '../search.pipe';
+>>>>>>> 18bb49d97a157c2e1d662e08f44bb89c6d3a2fda
 
 
 @Component({
@@ -17,12 +22,15 @@ import { Ng2SearchPipe, Ng2SearchPipeModule } from 'ng2-search-filter';
     RouterModule, 
     RouterOutlet, 
     RouterLink,
+    SearchPipe
   ],
   
   templateUrl: './categories.component.html',
   styleUrl: './categories.component.css'
 })
 export class CategoriesComponent {
+  word: any;
+
   categories: Category[] = [];
   loaded: boolean;
   constructor(private backendservice: BackendService){

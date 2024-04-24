@@ -2,6 +2,27 @@
 *{
     font-family: "Montserrat", sans-serif;
 }
+.search{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.search input{
+    width: 70%;
+    text-align: center;
+    border-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.search input:hover{
+    background-color:rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+.search input:focus{
+    border-color: aliceblue;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
