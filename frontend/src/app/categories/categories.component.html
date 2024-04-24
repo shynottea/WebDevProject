@@ -8,7 +8,7 @@
                 <div class="content">
                     <h3> {{category.name}} </h3>
                     <p> <b> Description: </b>{{category.description}} </p>
-                <a [routerLink]="['/categories/', category.id]"><button class="more-button">More</button></a>
+                <a [routerLink]="['/categories', category.id, category.name]"><button class="more-button">More</button></a>
                 </div>
             </div>
         </div>

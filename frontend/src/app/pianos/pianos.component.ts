@@ -1,12 +1,40 @@
 import { Component } from '@angular/core';
+import { Header2Component } from '../header2/header2.component';
+import { FooterComponent } from '../footer/footer.component';
+import { ActivatedRoute, RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { Product } from '../models';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-pianos',
   standalone: true,
-  imports: [],
+  imports: [Header2Component, FooterComponent, RouterModule, HttpClientModule, FormsModule, CommonModule],
   templateUrl: './pianos.component.html',
   styleUrl: './pianos.component.css'
 })
 export class PianosComponent {
+  products: Product[] = [];
+  // @ts-ignore
+  name: string;
+  constructor(private route: ActivatedRoute,
+              private backendservice: BackendService) {
+  }
+
+  ngOnInit(): void {
+    this.getCategoryProducts();
+  }
+
+  getCategoryProducts(): void {
+    this.route.paramMap.subscribe((params) => {
+      // @ts-ignore
+      const id = +params.get('id');
+      this.backendservice.getCategoryProducts(id).subscribe((data) => {
+        this.products = data;
+      });
+    });
+  }
 
 }

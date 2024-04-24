@@ -1,1 +1,20 @@
-<p>strings works!</p>
+<app-header2></app-header2>
+<div class="wrapper">
+    <h1> Strings </h1>
+    <div class="project">
+        <div class="shop">
+            <div class="box" *ngFor="let product of products">
+                <img src={{product.image_url}} alt="item">
+                <div class="content">
+                    <h3> {{product.name}} </h3>
+                    <p> <b>Description: </b> {{product.description}}</p>
+                    <p> <b>Price: </b> {{product.price}} </p>
+                    <p> <b>Rating: </b> {{product.rating}}  <img src="   https://cdn-icons-png.flaticon.com/512/2107/2107957.png " class="rating"> </p>
+                   <button class="more-button">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+

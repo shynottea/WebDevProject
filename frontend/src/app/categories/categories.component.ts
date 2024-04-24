@@ -6,6 +6,8 @@ import { Header2Component } from '../header2/header2.component';
 import { FooterComponent } from '../footer/footer.component';
 import { Category } from '../models';
 import { BackendService } from '../backend.service';
+import { Ng2SearchPipe, Ng2SearchPipeModule } from 'ng2-search-filter';
+
 
 
 @Component({
@@ -16,6 +18,7 @@ import { BackendService } from '../backend.service';
     RouterOutlet, 
     RouterLink,
   ],
+  
   templateUrl: './categories.component.html',
   styleUrl: './categories.component.css'
 })
@@ -26,6 +29,7 @@ export class CategoriesComponent {
     this.loaded = false;
 
   }
+
 
   ngOnInit(): void {
     this.getCategories()
