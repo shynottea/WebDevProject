@@ -26,7 +26,7 @@ class Product(models.Model):
     description = models.TextField(max_length=1000)
     rating = models.CharField(max_length=50)
     image_url = models.CharField(max_length=1500)
-    categoryId = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="vacancies")
+    categoryId = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="products")
     price = models.FloatField()
     
     
@@ -46,6 +46,7 @@ class Product(models.Model):
             'name': self.name,
             'description': self.description,
             'rating': self.rating,
-            'price': self.price
+            'price': self.price,
+            'image_url': self.image_url
             
         }

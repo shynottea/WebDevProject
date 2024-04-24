@@ -44,7 +44,8 @@ class ProductSerializer(serializers.Serializer):
             name=validated_data.get('name'),
             description=validated_data.get('description'),
             rating=validated_data.get('rating'),
-            price=validated_data.get('price')
+            price=validated_data.get('price'),
+            image_url=validated_data.get('image_url')
         )
         
         instance.save()

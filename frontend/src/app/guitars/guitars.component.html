@@ -3,14 +3,14 @@
     <h1> Guitars </h1>
     <div class="project">
         <div class="shop">
-            <div class="box">
-                <img src="https://www.ormsbyguitars.com/wp-content/uploads/2020/12/cuHypemachine-24.jpg" alt="item">
+            <div class="box" *ngFor="let product of products">
+                <img src={{product.image_url}} alt="item">
                 <div class="content">
-                    <h3> Guitars </h3>
-                    <p> <b>Description: </b> Welcome to the world of guitars, where strings resonate with the soul of music. Whether you're a seasoned guitarist or just beginning your musical journey, our guitars category offers an enchanting array of instruments to suit every style, skill level, and budget.</p>
-                    <p> <b>Price: </b> $150 </p>
-                    <p> <b>Rating: </b> 4.6  <img src="   https://cdn-icons-png.flaticon.com/512/2107/2107957.png " class="rating"> </p>
-                    <a routerlink=""><button class="more-button">Add to Cart</button></a>
+                    <h3> {{product.name}} </h3>
+                    <p> <b>Description: </b> {{product.description}}</p>
+                    <p> <b>Price: </b> {{product.price}} </p>
+                    <p> <b>Rating: </b> {{product.rating}}  <img src="   https://cdn-icons-png.flaticon.com/512/2107/2107957.png " class="rating"> </p>
+                   <button class="more-button">Add to Cart</button>
                 </div>
             </div>
         </div>
