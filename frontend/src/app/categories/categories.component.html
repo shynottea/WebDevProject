@@ -7,7 +7,7 @@
     <div class="project">
         <div class="shop">
             <div class="box" *ngFor="let category of categories |search:word">
-                <img src="https://www.taylorguitars.com/sites/default/files/styles/feature_half/public/images/2022-10/Taylor-Academy-10-Academy-12N-Academy-12e.jpg.webp?itok=NIM5Zjm2" alt="item">
+                <img src="{{category.image_url}}" alt="item">
                 <div class="content">
                     <h3> {{category.name}} </h3>
                     <p> <b> Description: </b>{{category.description}} </p>

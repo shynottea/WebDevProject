@@ -4,7 +4,7 @@
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThIFh7wdQtB1StJgC_wOXliQ_dPgbKRdNq9nhnlT-mrA&s" alt="Avatar" class="avatar">
     </div>
   
-    <div class="container" *ngIf = "logged">
+    <div class="container" *ngIf = "!logged">
       <label for="uname"><b>Username</b></label>
       <input type="text" [(ngModel)] = "username" name = "usern">
   
@@ -12,7 +12,7 @@
       <input type="password" [(ngModel)] = "password" name = "pass">
   
       <button (click)="login()">Login</button>
-      <button (click)="logout()">logout</button>
+      
     </div>
   
     <div class="container" style="background-color:#f1f1f1">
@@ -20,6 +20,14 @@
       <span class="psw">Forgot <a href="https://wsp.kbtu.kz">password?</a></span>
     </div>
   </form>
+
+  <div class="container" *ngIf = "logged">
+    <h1></h1>
+    <button (click)="logout()">logout</button>
+  </div>
   <app-footer></app-footer>
+
+
+
 
   
