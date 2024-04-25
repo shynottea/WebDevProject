@@ -5,7 +5,6 @@ import { LoginComponent } from '../login/login.component';
 import { routes } from '../app.routes';
 import { HighlightsComponent } from '../highlights/highlights.component';
 import { CategoriesComponent } from '../categories/categories.component';
-import { CartComponent } from '../cart/cart.component';
 
 @Component({
   selector: 'app-header2',

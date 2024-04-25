@@ -4,7 +4,7 @@
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThIFh7wdQtB1StJgC_wOXliQ_dPgbKRdNq9nhnlT-mrA&s" alt="Avatar" class="avatar">
     </div>
   
-    <div class="container" *ngIf = "logged">
+    <div class="container" *ngIf = "!logged">
       <label for="uname"><b>Username</b></label>
       <input type="text" [(ngModel)] = "username" name = "usern">
   

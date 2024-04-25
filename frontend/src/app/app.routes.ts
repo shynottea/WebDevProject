@@ -11,13 +11,11 @@ import { PianosComponent } from './pianos/pianos.component';
 import { StringsComponent } from './strings/strings.component';
 import { DrumsComponent } from './drums/drums.component';
 import { WindsComponent } from './winds/winds.component';
-import { CartComponent } from './cart/cart.component';
 
 export const routes: Routes = [
     {path: '', component: HeaderComponent},
     {path: 'login', component: LoginComponent},
     {path: 'about', component: AboutComponent},
-    {path: 'cart', component: CartComponent},
     {path: 'categories', component: CategoriesComponent},
     {path: 'categories/:id/Guitars', component: GuitarsComponent},
     {path: 'categories/:id/Keys', component: PianosComponent},
