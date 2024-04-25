@@ -7,15 +7,17 @@ import { BackendService } from '../backend.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { SearchPipe } from '../search.pipe';
 
 @Component({
   selector: 'app-guitars',
   standalone: true,
-  imports: [Header2Component, FooterComponent, RouterModule, HttpClientModule, FormsModule, CommonModule],
+  imports: [Header2Component, FooterComponent, RouterModule, HttpClientModule, FormsModule, CommonModule, SearchPipe],
   templateUrl: './guitars.component.html',
   styleUrl: './guitars.component.css'
 })
 export class GuitarsComponent {
+  word:any;
    // @ts-ignore
    products: Product[] = [];
    // @ts-ignore

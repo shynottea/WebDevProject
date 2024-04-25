@@ -11,6 +11,7 @@ import { SearchPipe } from '../search.pipe';
 
 
 
+
 @Component({
   selector: 'app-categories',
   standalone: true,

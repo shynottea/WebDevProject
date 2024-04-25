@@ -7,15 +7,17 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Product } from '../models';
 import { BackendService } from '../backend.service';
+import { SearchPipe } from '../search.pipe';
 
 @Component({
   selector: 'app-pianos',
   standalone: true,
-  imports: [Header2Component, FooterComponent, RouterModule, HttpClientModule, FormsModule, CommonModule],
+  imports: [Header2Component, FooterComponent, RouterModule, HttpClientModule, FormsModule, CommonModule, SearchPipe],
   templateUrl: './pianos.component.html',
   styleUrl: './pianos.component.css'
 })
 export class PianosComponent {
+  word:any;
   products: Product[] = [];
   // @ts-ignore
   name: string;
