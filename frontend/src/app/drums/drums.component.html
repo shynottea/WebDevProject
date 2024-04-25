@@ -1,9 +1,12 @@
 <app-header2></app-header2>
 <div class="wrapper">
     <h1> Drums </h1>
+    <div class="search">
+        <input type="text" placeholder="Search..." [(ngModel)]="word">
+    </div>
     <div class="project">
         <div class="shop">
-            <div class="box" *ngFor="let product of products">
+            <div class="box" *ngFor="let product of products |search:word">
                 <img src={{product.image_url}} alt="item">
                 <div class="content">
                     <h3> {{product.name}} </h3>
