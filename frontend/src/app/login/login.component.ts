@@ -3,7 +3,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 import { Header2Component } from '../header2/header2.component';
 import { FooterComponent } from '../footer/footer.component';
 import { BackendService } from '../backend.service';
-import { Token } from '../models';
+import { Token} from '../models';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';

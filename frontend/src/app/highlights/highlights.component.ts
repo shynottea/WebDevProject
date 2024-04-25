@@ -3,6 +3,8 @@ import { FooterComponent } from '../footer/footer.component';
 import { ActivatedRoute, RouterModule, RouterOutlet } from '@angular/router';
 import { Header2Component } from '../header2/header2.component';
 import { BackendService } from '../backend.service';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
@@ -10,7 +12,7 @@ import { BackendService } from '../backend.service';
   standalone: true,
   imports: [Header2Component, FooterComponent,
     RouterModule, 
-    RouterOutlet,],
+    RouterOutlet, FormsModule, CommonModule],
   templateUrl: './highlights.component.html',
   styleUrl: './highlights.component.css'
 })
