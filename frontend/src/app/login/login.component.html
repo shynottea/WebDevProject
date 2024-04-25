@@ -4,14 +4,15 @@
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThIFh7wdQtB1StJgC_wOXliQ_dPgbKRdNq9nhnlT-mrA&s" alt="Avatar" class="avatar">
     </div>
   
-    <div class="container">
+    <div class="container" *ngIf = "logged">
       <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input type="text" [(ngModel)] = "username" name = "usern">
   
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" [(ngModel)] = "password" name = "pass">
   
-      <button type="submit">Login</button>
+      <button (click)="login()">Login</button>
+      <button (click)="logout()">logout</button>
     </div>
   
     <div class="container" style="background-color:#f1f1f1">
@@ -20,3 +21,5 @@
     </div>
   </form>
   <app-footer></app-footer>
+
+  

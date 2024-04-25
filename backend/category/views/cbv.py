@@ -3,12 +3,17 @@ from django.shortcuts import render
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.permissions import IsAuthenticated, AllowAny
 
 from category.models import Category, Product
 from category.serializers import CategorySerializer, CategorySerializer2, ProductSerializer, ProductSerializer2
 
 
 class CategoryListAPIView(APIView):
+    permission_classes = (IsAuthenticated, )
+    def get_queryset(self):
+        return Category.objects.filter(user=self.request.user)
+    
     def get(self, request):
         categories = Category.objects.all()
         serializer = CategorySerializer2(categories, many=True)
@@ -56,6 +61,7 @@ class CategoryDetailAPIView(APIView):
     
 
 class ProductListAPIView(APIView):
+    permission_classes = (IsAuthenticated, )
     def get(self, request):
         products = Product.objects.all()
         serializer = ProductSerializer2(products, many=True)

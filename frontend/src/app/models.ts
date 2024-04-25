@@ -13,3 +13,8 @@ export interface Product {
     categoryId: number;
     price: BigInteger;
 }
+
+export interface Token {
+    access: string;
+    refresh: string;
+}
